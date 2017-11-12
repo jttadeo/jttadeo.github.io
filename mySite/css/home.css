@@ -1,0 +1,235 @@
+body {
+	background-color: rgb(100, 197, 255);
+	color: black;
+	
+	/*  serif
+		sans-serif
+		monospace
+		cursive
+		fantasy
+		system-ui   */
+		
+	font-family: 'Righteous', cursive, sans-serif;
+}
+
+@keyframes animate {
+	/*
+	from {
+		background-color: yellow;
+		color: blue;
+	}
+	
+	to {
+		background-color: hotpink;
+		color: ghostwhite;
+	}*/
+	
+	0% {
+		background-color: hotpink;
+		padding: 0px;
+		font-size: 15px;
+		transform: rotate(0deg);
+		
+	}
+	
+	50% {
+		background-color: blue;
+		padding: 50px;
+		font-size: 50px;
+		transform: rotate(180deg);
+	}
+	
+	100% {
+		background-color: hotpink;
+		padding: 0px;
+		font-size: 15px;
+		transform: rotate(360deg);
+	}
+	
+}
+
+@keyframes imageAnim {
+	
+	0% {
+		width: 20%;
+	}
+	
+	50% {
+		width: 30%;
+	}
+	
+	100% {
+		width: 20%;
+	}
+	
+}
+
+@keyframes linkAnimBefore {
+	
+	from {
+		font-size: 2em;
+	}
+	
+	to {
+		font-size: 1em;
+	}
+	
+}
+
+@keyframes linkAnimAfter {
+	
+	from {
+		font-size: 1em;
+	}
+	
+	to {
+		font-size: 2em;
+	}
+	
+}
+
+/* this is a comment */
+h1 {
+	background-color: rgb(225, 225, 150); /* changes background color */
+	color: brown;/* changes text color */
+	
+	font-size: 2.5em; /* changes text size */
+	font-family: 'Modak', cursive, sans-serif;
+	text-align: center;
+	width: 60%;
+	
+	/*centers the element if the width is less than 100% usually*/
+	display: block;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border: darkblue 15px inset;
+	
+	animation-name: animate;
+	animation-duration: 2s;
+	animation-iteration-count: 2;
+	animation-direction: reverse;
+	animation-delay: 3s;
+}
+
+/*only happens if your cursor hovers over it */
+h1:hover {
+	color: hotpink;
+	background-color: lightgreen;
+	border: hotpink 30px dotted;
+	font-size: 4em;
+	padding: 5px;
+}
+
+img:hover {
+	width: 500px;
+	background-color: blue;
+	border: hotpink 10px dotted;
+	
+	animation-name: imageAnim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+
+h2 {
+	color: navy;
+}
+
+/* use a hashtag to target an id */
+#what-donuts {
+	color: pink;
+}
+
+#donut-img {
+	background-color: yellow;
+}
+
+.list-item {
+	color: gold;
+}
+
+.jelly {
+	color: pink;
+}
+
+img {
+	background-color: green;
+	height: 200px;
+	/*padding edits the space (padding) around your element*/
+	padding: 20px;
+	/*padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-right: 40px;*/
+	
+	/*border edits the space around the padding */
+	/*solid dotted dashed double inset outset groove nones*/
+	border: 20px groove red;
+	
+	/*margin edits the space around the border*/
+	margin: 30px;
+	/*margin-left: 100px;
+	margin-top: 20px;
+	margin-bottom:30px;*/
+	
+	
+}
+
+li {
+	color: ghostwhite;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1em;
+	
+	animation-name: linkAnimBefore;
+	animation-duration: 0.1s;
+	animation-iteration-count: 1;
+}
+
+/*only happens when hovered over */
+a:hover {
+	text-decoration: underline;
+	color: red;
+	background-color: yellow;
+	font-size: 2em;
+	
+	animation-name: linkAnimAfter;
+	animation-duration: 0.1s;
+	animation-iteration-count: 1;
+}
+
+iframe {
+	width: 90%;
+	height: 500px;
+	
+}
+
+/*only happens if the screen width is 500px or less*/
+@media (max-width: 500px) {
+	
+	h1 {
+		padding: 10px;
+		font-size: 1.5em;
+		background-color: blue;
+		border: 2px solid red;
+	}
+	
+	h1:hover {
+		font-size: 2em;
+		border: 2px dotted hotpink;
+	}
+	
+	img {
+		width: 70%;
+		height: 40%;
+		margin: 1em;
+		padding: 0.5em;
+		border: 1px inset red;
+	}
+	
+}
+
+

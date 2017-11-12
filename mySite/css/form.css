@@ -1,0 +1,93 @@
+body {
+	
+	background-color: rgb(255, 255, 170);
+	
+	font-family: 'Righteous', cursive, sans-serif;
+	
+}
+
+h1 {
+	background-color: yellow;
+	color: hotpink;
+	font-family: 'modak', cursive, sans-serif;
+	text-align: center;
+	
+	padding: 20px;
+	width: 50%;
+	border: 5px inset red;
+	border-radius: 50px;
+	margin: auto;
+	
+}
+
+#top-p {
+	
+	font-size: 1.5em;
+	text-align: center;
+	color: rgb(50, 50, 150);
+	
+}
+
+form {
+	background-color: rgb(255, 255, 200);
+	width: 85%;
+	margin: auto;
+	border: 5px outset rgb(50, 50, 150);
+	border-radius: 10px;
+	
+	background-image: url("../images/bg.png");
+	background-size: 80%;
+	background-repeat: repeat; /* no-repeat */
+	
+}
+
+fieldset {
+	border: 0px;
+}
+
+.form-area {
+	background-color: rgb(200, 200, 250);
+	width: 27%;
+	padding: 1px 10px 10px 10px;
+	margin: 5px;
+}
+
+#submit-button {
+	padding: 10px 20px 10px 20px;
+	background-color: rgb(255, 200, 200);
+	border: 2px outset rgb(255, 150, 150);
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+
+
+@media (max-width: 500px) {
+	
+	body {
+		background-color: green;
+		
+	}
+	
+	h1 {
+		padding: 5px;
+		font-size: 1.5em;
+		border-radius: 8px;
+	}
+	
+	.form-area {
+		width: 85%;
+	}
+	
+	h2 {
+		font-size: 1em;
+	}
+	
+	#submit-button {
+		display: block;
+		margin: auto;
+	}
+}
+
+
+

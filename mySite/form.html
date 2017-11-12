@@ -1,0 +1,68 @@
+<!DOCTYPE tml>
+
+<html>
+	<head>
+		<title>The Best Form Ever</title>
+		<meta charset = "UTF-8">
+		
+		<link href="https://fonts.googleapis.com/css?family=Modak|Righteous" rel="stylesheet">
+		<link rel = "stylesheet" href = "css/form.css">
+		
+	</head>
+	
+	<body>
+	
+		<h1>The Donut Quiz!</h1>
+		
+		<p id = "top-p">Please fill out this donut quiz!</p>
+		
+		<form>
+			<fieldset>
+			
+				<div class = "form-area">
+					<h2>Tell me about yourself?</h2>
+					First Name: <input type = "text" name = "first-name" value = "Insert name here"></input><br><br>
+					Last Name: <input type = "text" name = "last-name" value = "Insert name here"></input>
+				</div>
+				
+				<div class = "form-area">
+					<h2>Do you like donuts?</h2>
+					<input type = "radio" name = "like-donuts" value = "yes" checked></input> Yes 
+					<input type = "radio" name = "like-donuts" value = "no"></input> No 
+				</div>
+				
+				<div class = "form-area">
+					<h2>Which donuts do you like?</h2>
+					<input type = "checkbox" name = "fave-donuts" value = "plain"></input> Plain <br>
+					<input type = "checkbox" name = "fave-donuts" value = "choc-glazed"></input> Chocolate Glazed <br>
+					<input type = "checkbox" name = "fave-donuts" value = "jelly"></input> Jelly Donut <br>
+				</div>
+				
+				<div class = "form-area">
+					<h2>Which is your favorite donut?</h2>
+					<select>
+						<option value = "plain">Plain</option>
+						<option value = "choc-glazed">Chocolate Glazed</option>
+						<option value = "jelly">Jelly Donut</option>
+						<option value = "sprinkles">Sprinkled</option>
+						<option value = "mushroom">Mushroom</option>
+					</select>
+				</div>
+				
+				<div class = "form-area">
+					<h2>What's your email address?</h2>
+					<input type = "email" name = "email"></input>
+				</div>
+				
+				<div class = "form-area">
+					<h2>What's Your Phone number?</h2>
+					<input type = "number" name = "number"></input><br>
+				</div>
+				
+				<button type = "button" id = "submit-button" href = "index.html">submit</button>
+				
+			</fieldset>
+		</form>
+		
+	</body>
+</html>
